@@ -1,0 +1,6 @@
+<div class="shoes" *ngIf="data$ | async as data">
+  <div *ngFor="let shoe of data">
+    <p>{{ shoe.name }}</p>
+    <button type="button" routerLink="/shoes/{{ shoe.id }}">Show detail</button>
+  </div>
+</div>
